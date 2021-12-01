@@ -14,38 +14,45 @@
    <div class="wrapper">
       <div class="appointment">
          <div class="appointment__container">
-            <form class="appointment__form-container" action="#">
-               <div class="appointment__form">
-                  <h2 class="appointment__title">Make an appointment</h2>
-                  <div class="form-element"><input class="appointment__name input-element" type="text" name="username"
-                        placeholder="Name"></div>
-                  <div class="form-element"><input class="appointment__email input-element" type="email"
-                        name="user email" placeholder="Email"></div>
-                  <div class="form-element"><input class="appointment__number input-element" type="tel"
-                        name="user phone" placeholder="Phone Number"></div>
-                  <div class="form-element"><input class="appointment__service input-element" type="text"
-                        placeholder="Select service"></div>
-                  <div class="appointment__textarea-element"><textarea class="appointment__textarea input-element"
-                        name="puppers info" placeholder="Tell us about your puppers include his/her name"></textarea>
+            <form class="appointment__form-container" action="#" method="get" enctype="multipart/form-data">
+                  <div class="appointment__form">
+                     <h2 class="appointment__title">Make an appointment</h2>
+                     <div class="form-element"><input class="appointment__name input-element" type="text" name="username"
+                           placeholder="Name" required></div>
+                     <div class="form-element"><input class="appointment__email input-element" type="email"
+                           name="user email" placeholder="Email" required></div>
+                     <div class="form-element"><input class="appointment__number input-element" type="tel"
+                           name="user phone" placeholder="Phone Number" required maxlength="11"></div>
+                     <div class="form-element">
+                        <select class="appointment__service input-element" type="text" name="service point" required>
+                           <option value="1">1</option>
+                           <option value="2" selected>2</option>
+                           <option value="3">3</option>
+                        </select></div>
+                     <div class="appointment__textarea-element"><textarea class="appointment__textarea input-element"
+                           name="puppers info" placeholder="Tell us about your puppers include his/her name"></textarea>
+                     </div>
+                     <div class="button-container">
+                        <button class="button" type="submit">Make an appointment</button>
+                     </div>
                   </div>
-                  <div class="button"><a href="#">Make an appointment</a></div>
-               </div>
             </form>
-            <div class="appointment__advertisment">
-               <h2 class="advertisment__heading">Maxime placeat facere possimus omnis</h2>
+            <div class="appointment__advertisment advertisment-content">
+               <h2 class="advertisment-content__heading">Maxime placeat facere possimus omnis</h2>
+               <div class="advertisment-content__title">5,700+</div>
+               <div class="advertisment-content__subtitle">customers served</div>
             </div>
          </div>
       </div>
+   <div class="summary">
+      <div class="summary__container">
+         <h3 class="summary__heading"></h3>
+         <div class="summary__shipping"></div>
+      </div>
+   </div>
    </div>
 </body>
 
 </html>
 
-<!-- <div class="advertisment">
-   <h2 class="advertisment__heading">Maxime placeat facere possimus omnis Maxime placeat facere possimus
-      omnis Maxime placeat facere possimus omnis Maxime placeat facere possimus omnis Maxime placeat
-      facere
-      possimus omnis</h2>
-   <div class="advertisment__title">5,700+</div>
-   <div class="advertisment__subtitle">customers served</div>
-</div> -->
+
