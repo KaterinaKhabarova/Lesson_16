@@ -24,7 +24,7 @@
                   <div class="form-element"><input class="appointment__number input-element" type="tel"
                         name="user phone" placeholder="Phone Number" required maxlength="11"></div>
                   <div class="form-element">
-                     <select class="appointment__service input-element" type="text" name="service point" required>
+                     <select class="appointment__service input-element" name="service point">
                         <option value="1">1</option>
                         <option value="2" selected>2</option>
                         <option value="3">3</option>
@@ -66,15 +66,15 @@
                         <input name="state" id="state" type="text" required>
                      </div>
                      <div class="form-item__postal-code item-form">
-                        <label for="postal code">Zip/Postal Code</label>
-                        <input type="text" id="postal code" required>
+                        <label for="postal_code">Zip/Postal Code</label>
+                        <input type="text" id="postal_code" required>
                      </div>
                      <div class="form-item__delivery item-form">
-                        <label for="standart rate">Standart rate</label>
-                        <div class="form-item__input"><input type="radio" id="standart rate" name="standart rate"> Price
+                        <label for="standart_rate">Standart rate</label>
+                        <div class="form-item__input"><input type="radio" id="standart_rate" name="standart_rate"> Price
                            may vary depending on the item/destination. Shop Staff will contact you. $21.00</div>
                         <label for="pickup">Pickup from store</label>
-                        <div class="form-item__input"><input type="radio" id="pickup" name="standart rate"> 1234 Street
+                        <div class="form-item__input"><input type="radio" id="pickup" name="standart_rate"> 1234 Street
                            Adress City Address, 1234 $0.00</div>
                      </div>
                      <div class="form-item__discount item-form">
@@ -104,9 +104,11 @@
                         <input type="password" name="user_password" placeholder="Your password">
                      </div>
                      <div class="box-form__footer">
-                        <div class="box-form__button-content"><button class="customers__button button-style">Sign in</button></div>
+                        <div class="box-form__button-content"><button class="customers__button button-style">Sign
+                              in</button></div>
                         <div class="customers__link"><a href="#">Forgot Your Password?</a></div>
                      </div>
+                  </div>
                </form>
             </div>
          </div>
