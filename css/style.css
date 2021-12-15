@@ -158,7 +158,7 @@ button:hover {
 }
 .summary__block {
    padding: 18px 30px 29px 32px;
-   max-width: 43.7%;
+   max-width: 343px;
    background-color: #f5f7ff;
 }
 .summary__main-heading {
@@ -198,12 +198,14 @@ button:hover {
    display: flex;
    flex-direction: column;
 }
-.item-form:not(:last-child) {
+.item-form:not(:last-child),
+.item-form__label:not(:last-child) {
    margin: 0px 0px 5px 0px;
 }
-.item-form label {
+.item-form__label,
+.item-form__radio-label {
    font-weight: 600;
-   font-size: 13px;
+   font-size: 11px;
    line-height: 2.1;
    color: #000000;
 }
@@ -220,6 +222,15 @@ button:hover {
    border: 1px solid #a2a6b0;
    border-radius: 4px;
 }
+.item-form__radio-elements {
+font-weight: normal;
+font-size: 12px;
+line-height: 1.66;
+color: #000000;
+}
+.item-form__radio-elements .form-item__input:not(:last-child) {
+margin: 0px 11px 0px 0px;
+}
 .form-item__adress {
 }
 .form-item__postal-code {
@@ -232,10 +243,6 @@ button:hover {
 }
 .form-item__delivery:not(:last-child) {
    margin: 0px 0px 35px 0px;
-}
-.item-form__radio-elements label{
-   display: flex;
-   flex-direction: column;
 }
 .form-item__discount {
 }
