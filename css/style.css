@@ -65,7 +65,6 @@ button:hover {
    background-color: #5d62b5;
    padding: 0px 57px;
    max-width: 585px;
-   flex: 0 1 57.4%;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
@@ -88,14 +87,20 @@ button:hover {
 .form-element {
    flex: 0 1 50%;
    max-width: 224px;
-   border: 2px solid white;
-   border-radius: 10px;
-   padding: 17px 24px 15px 24px;
 }
 .input-element {
+   padding: 17px 24px 15px 24px;
    background-color: #5d62b5;
    color: #ffffff;
    width: 100%;
+   border-radius: 10px;
+   border: 2px solid white;
+}
+.input-element:hover {
+   background-color: #5659a0;
+}
+.input-element:hover::placeholder {
+   opacity: 0;
 }
 .input-element::placeholder,
 .input-element option {
@@ -118,11 +123,10 @@ button:hover {
    height: 180px;
    padding: 17px 0px 15px 24px;
    border-radius: 10px;
+   resize: vertical;
 }
 .appointment__textarea-element {
    flex: 0 1 100%;
-   border: 2px solid white;
-   border-radius: 10px;
 }
 .appointment__textarea-element:not(:last-child) {
    margin: 0px 0px 6px 0px;
@@ -266,7 +270,7 @@ button:hover {
 }
 .block-style {
    padding: 37px 57.5px 0px 57.5px;
-  flex: 0 1 564px;
+   flex: 0 1 564px;
    display: flex;
    flex-direction: column;
    background: #f5f7ff;
@@ -313,6 +317,7 @@ button:hover {
    margin: 0px 0px 5px 0px;
 }
 .form-box-field input {
+   width: 100%;
    padding: 14px 0px 14px 17px;
    border: 1px solid #a2a6b0;
    border-radius: 4px;
@@ -351,6 +356,7 @@ button:hover {
    transition: background-color 0.3s linear, color 0.3s linear;
 }
 .customers__link {
+   background-color: #f5f7ff;
    padding: 0px 12px;
    font-weight: normal;
    font-size: 14px;
@@ -363,7 +369,8 @@ button:hover {
 }
 .customers__link:hover {
    border: 2px solid #0156ff;
-   transition: border 0.3s linear;
+   transition: border 0.3s linear, background-color 0.3s linear;
+   background-color: #fff;
 }
 /* Part 4 */
 .customers__block-new {
