@@ -54,7 +54,7 @@
                <form class="summary__form-container" action="#" method="get">
                   <div class="summary__form form-item">
                      <div class="form-item__country item-form">
-                        <label for="country">Country</label>
+                        <label class="item-form__label" for="country">Country</label>
                         <select name="country" id="country">
                            <option value="USA">USA</option>
                            <option value="Australia" selected>Australia</option>
@@ -62,25 +62,28 @@
                         </select>
                      </div>
                      <div class="form-item__adress item-form">
-                        <label for="state">State/Province</label>
+                        <label class="item-form__label" for="state">State/Province</label>
                         <input name="state" id="state" type="text" required>
                      </div>
                      <div class="form-item__postal-code item-form">
-                        <label for="postal_code">Zip/Postal Code</label>
+                        <label class="item-form__label" for="postal_code">Zip/Postal Code</label>
                         <input type="text" name="postal_code" id="postal_code" required>
                      </div>
-                     <div class="form-item__delivery item-form">
-                        <div class="item-form__radio-elements">
-                           <label for="standart_rate">Standart rate</label>
-                           <input class="form-item__input" type="radio" id="standart_rate" name="standart_rate"> Price may vary depending on the item/destination. Shop Staff will contact you. $21.00
-                           <label for="pickup">Pickup from store</label>
-                           <input class="form-item__input" type="radio" id="pickup" name="standart_rate"> 1234 Street
-                              Adress City Address, 1234 $0.00
+                     <div class="form-item__delivery">
+                        <div class="item-form__radio-label">Standart rate</div>
+                        <div class="item-form__radio-elements"><input class="form-item__input" type="radio"
+                              id="standart_rate" name="standart_rate"><label for="standart_rate"> Price may vary
+                              depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                        </div>
+                        <div class="item-form__radio-label">Pickup from store</div>
+                        <div class="item-form__radio-elements"><input class="form-item__input" type="radio" id="pickup"
+                              name="standart_rate"><label for="pickup"> 1234 Street Adress City Address, 1234
+                              $0.00</label>
                         </div>
                      </div>
                      <div class="form-item__discount item-form">
                         <h4 class="form-item__label heading">Apply Discount Code</h4>
-                        <label for="discount">Enter discount code</label>
+                        <label class="item-form__label" for="discount">Enter discount code</label>
                         <input type="text" name="discount" id="discount" placeholder="Enter Discount code">
                      </div>
                   </div>
