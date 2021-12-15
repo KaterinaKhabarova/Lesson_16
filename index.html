@@ -14,24 +14,24 @@
    <div class="wrapper">
       <div class="appointment">
          <div class="appointment__container">
-            <form class="appointment__form-container" action="#" method="get" enctype="multipart/form-data">
+            <form class="appointment__form-container" action="#" method="get">
                <div class="appointment__form">
                   <h2 class="appointment__title">Make an appointment</h2>
                   <div class="form-element"><input class="appointment__name input-element" type="text" name="username"
                         placeholder="Name" required></div>
                   <div class="form-element"><input class="appointment__email input-element" type="email"
-                        name="user email" placeholder="Email" required></div>
+                        name="user-email" placeholder="Email" required></div>
                   <div class="form-element"><input class="appointment__number input-element" type="tel"
-                        name="user phone" placeholder="Phone Number" required maxlength="11"></div>
+                        name="user-phone" placeholder="Phone Number" required maxlength="11"></div>
                   <div class="form-element">
-                     <select class="appointment__service input-element" name="service point">
+                     <select class="appointment__service input-element" name="service-point">
                         <option value="1">1</option>
                         <option value="2" selected>2</option>
                         <option value="3">3</option>
                      </select>
                   </div>
                   <div class="appointment__textarea-element"><textarea class="appointment__textarea input-element"
-                        name="puppers info" placeholder="Tell us about your puppers include his/her name"></textarea>
+                        name="puppers-info" placeholder="Tell us about your puppers include his/her name"></textarea>
                   </div>
                   <div class="button-container">
                      <button class="button" type="submit">Make an appointment</button>
@@ -51,7 +51,7 @@
                <h3 class="summary__main-heading">Summary</h3>
                <h4 class="summary__shipping heading">Estimate Shipping and Tax</h4>
                <div class="summary__destination">Enter your destination to get a shipping estimate.</div>
-               <form class="summary__form-container" action="#" method="get" enctype="multipart/form-data">
+               <form class="summary__form-container" action="#" method="get">
                   <div class="summary__form form-item">
                      <div class="form-item__country item-form">
                         <label for="country">Country</label>
@@ -67,7 +67,7 @@
                      </div>
                      <div class="form-item__postal-code item-form">
                         <label for="postal_code">Zip/Postal Code</label>
-                        <input type="text" id="postal_code" required>
+                        <input type="text" name="postal_code" id="postal_code" required>
                      </div>
                      <div class="form-item__delivery item-form">
                         <label for="standart_rate">Standart rate</label>
@@ -93,7 +93,7 @@
             <div class="customers__block block-style">
                <h4 class="customers__heading heading-customers">Registered Customers</h4>
                <div class="customers__message">If you have an account, sign in with your email address.</div>
-               <form class="customers__form-container" action="#" method="get" enctype="multipart/form-data">
+               <form class="customers__form-container" action="#" method="get">
                   <div class="customers__form box-form">
                      <div class="box-form__email form-box-field">
                         <label for="user_email">Email*</label>
@@ -106,7 +106,7 @@
                      <div class="box-form__footer">
                         <div class="box-form__button-content"><button class="customers__button button-style">Sign
                               in</button></div>
-                        <div class="customers__link"><a href="#">Forgot Your Password?</a></div>
+                        <button class="customers__link">Forgot Your Password?</button>
                      </div>
                   </div>
                </form>
