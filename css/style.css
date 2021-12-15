@@ -233,6 +233,10 @@ button:hover {
 .form-item__delivery:not(:last-child) {
    margin: 0px 0px 35px 0px;
 }
+.item-form__radio-elements label{
+   display: flex;
+   flex-direction: column;
+}
 .form-item__discount {
 }
 .summary__button {
